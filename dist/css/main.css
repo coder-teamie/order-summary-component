@@ -1,8 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap");
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  height: 30vh;
+  background: #e0e8ff;
+}
+
+.pattern-img-container {
+  background: url("/images/pattern-background-mobile.svg") center/cover no-repeat;
+  width: 100%;
+  height: 60vh;
+  position: fixed;
+  z-index: -8;
+  margin: -0.5rem;
+  margin-top: -5rem;
+}
+
+.card {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  background: #fff;
+  border-radius: 20px;
+  max-width: 22rem;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.order-info {
+  margin-bottom: 0.8rem;
+}
+
+.order-info h1 {
+  color: #1f2f56;
+  text-transform: capitalize;
+  font-weight: 900;
+  margin: 1.5rem auto;
+  margin-bottom: 1rem;
+}
+
+.order-info p {
+  color: #7280a7;
+  max-width: 17rem;
+  line-height: 1.5;
+}
+
+.order-plan {
+  width: 75%;
+  display: grid;
+  place-items: center;
+}
+
+.order-plan-content {
+  display: flex;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f7ff;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-plan-content .icon-music {
+  width: 50px;
+  height: 50px;
+}
+
+.order-plan-content .plan {
+  display: grid;
+  row-gap: 0.2rem;
+  margin-left: -2rem;
+}
+
+.order-plan-content .plan h2 {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.order-plan-content .plan p {
+  color: #7280a7;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.order-plan-content a {
+  color: #3829e0;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  transition: all 0.3s linear;
+}
+
+.order-plan-content .change-btn:hover {
+  color: rgba(116, 105, 233, 0.8);
+  text-decoration: none;
+}
+
+.payment-btn {
+  display: inline-block;
+  width: 85%;
+  padding: 0.75rem 2rem;
+  color: #e0e8ff;
+  background: #3829e0;
+  border-color: transparent;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 20px 15px 2px #dfd9ff;
+  transition: all 0.3s linear;
+}
+
+.order-cancel {
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+  transition: all 0.3s linear;
+}
+
+.order-cancel:hover {
+  color: #1f2f56;
+}
+
+.payment-btn:hover {
+  opacity: 0.7;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 95vh;
+  gap: 0;
+}
+
+@media screen and (min-width: 90rem) {
+  body {
+    background: #e0e8ff;
+  }
+  .pattern-img-container {
+    background: url("/images/pattern-background-desktop.svg") center/cover no-repeat;
+  }
+  .section-center {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    max-width: 28rem;
+  }
+  .order-info h1 {
+    margin-top: 2.3rem;
+  }
+  .order-info p {
+    max-width: 18.3rem;
+    font-weight: 500;
+  }
+  .order-plan {
+    width: 70%;
+    margin-bottom: 0.8rem;
+  }
+  .order-plan .order-plan-content {
+    padding: 1.4rem 1.5rem;
+  }
+  .order-plan .order-plan-content .plan {
+    margin-left: -4.5rem;
+  }
+  .order-plan .order-plan-content .plan h2,
+  .order-plan .order-plan-content .plan p {
+    font-size: 1rem;
+  }
+  .order-plan .order-plan-content a {
+    font-size: 0.9rem;
+  }
+  .payment-btn {
+    font-size: 0.85rem;
+    width: 80%;
+    color: #fff;
+    letter-spacing: 0.7px;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.85rem;
   text-align: center;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #3829e0;
+  font-weight: 900;
+  text-decoration: none;
 }

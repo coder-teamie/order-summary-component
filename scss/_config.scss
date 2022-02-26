@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+body {
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  height: 30vh;
+  background: hsl(225, 100, 94);
+}
+
+.pattern-img-container {
+  background: url('/images/pattern-background-mobile.svg') center/cover
+    no-repeat;
+  width: 100%;
+  height: 60vh;
+  position: fixed;
+  z-index: -8;
+  margin: -0.5rem;
+  margin-top: -5rem;
+}
+
+$font-weights: (
+  'regular': 500,
+  'soft': 600,
+  'medium': 700,
+  'bold': 900,
+);
+
+@function weights($size) {
+  @return map-get($font-weights, $size);
+}
+
+@mixin desktop {
+  @media screen and (min-width: 90rem) {
+    @content;
+  }
+}
+
+@mixin transition($speed) {
+  transition: all 0.3s $speed;
+}
