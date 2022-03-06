@@ -9,8 +9,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ### The challenge
@@ -21,14 +19,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./.png)
+![](/images/mobile-view.png)
+![](/images/desktop-view.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-using-sass-_dHFekXZv)
+- Live Site URL: [Netlify](https://coder-teamie-order-summary-component.netlify.app/)
 
 ## My process
+
+Started of by identifying the requiurements for the design and itemizing the tools and logic required creating the entire markup for my component after which I started the mobile design using SASS and then moved to the desktop layout.
 
 ### Built with
 
@@ -37,23 +38,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-# Some code snippets:
-
-```html
-
-```
-
-```css
-
-```
-
-### Useful resources
-
-- [](https://www.example.com) -
-- [](https://www.example.com) -
 
 ## Author
 

@@ -12,15 +12,8 @@ main {
 }
 
 @include desktop {
-  // Body default background
   body {
-    background: hsl(225, 100, 94);
-  }
-
-  // Pattern Background
-  .pattern-img-container {
-    background: url('/images/pattern-background-desktop.svg') center/cover
-      no-repeat;
+    background-image: url('/images/pattern-background-desktop.svg');
   }
 
   // Section Center
